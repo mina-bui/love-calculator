@@ -53,3 +53,47 @@ footer {
     transform: translate(-50%, -50%);
     text-align: center;
 }
+.main-container svg {
+    /* positioning */
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 7px;
+    /* sizing */
+    width: auto;
+    height: 20px;
+    /* fill */
+    fill: lightgrey;
+    opacity: 0.8;
+
+}
+
+input {
+    padding: 10px 10px 10px 50px;
+    border: none;
+    border-radius: 5px;
+}
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: red;
+  opacity: 1; /* Firefox */
+}
+
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: red;
+}
+
+input::-ms-input-placeholder { /* Microsoft Edge */
+  color: red;
+}
+
+input.submit {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+}
+input.submit:hover {
+    background-color: grey;
+    color: white;
+    transition-duration: 0.4s;
+}
