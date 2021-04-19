@@ -1,5 +1,6 @@
 /* Styling for the Love Calculator */
 
+/* =============================================== */
 /* Box Sizing Reset */
 html {
     box-sizing: border-box;
@@ -10,7 +11,7 @@ html {
 *:after {
     box-sizing: inherit;
 }
-/* End Box Sizing Reset */
+/* =============================================== */
 
 body {
     background-color: darkred;
@@ -45,6 +46,7 @@ footer {
     position: fixed;
 }
 
+/* =============================================== */
 /* Form Styling */
 .main-container {
     position: absolute;
@@ -57,43 +59,40 @@ footer {
     /* positioning */
     position: absolute;
     margin-left: 10px;
-    margin-top: 7px;
+    margin-top: 17px;
     /* sizing */
     width: auto;
     height: 20px;
     /* fill */
     fill: lightgrey;
     opacity: 0.8;
-
 }
 
 input {
     padding: 10px 10px 10px 50px;
+    margin: 10px 0px;
     border: none;
     border-radius: 5px;
 }
-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: red;
-  opacity: 1; /* Firefox */
-}
-
-input:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: red;
-}
-
-input::-ms-input-placeholder { /* Microsoft Edge */
-  color: red;
+input::placeholder  /* Chrome, Firefox, Opera, Safari 10.1+ */
+input:-ms-input-placeholder,  /* Internet Explorer 10-11 */
+input::-ms-input-placeholder /* Microsoft Edge */ {
+    color: grey;
+    opacity: 1; /* Firefox */
 }
 
 input.submit {
     padding: 10px 30px;
+    margin: 25px 0px;
     border: none;
     border-radius: 25px;
     background-color: black;
     color: white;
 }
 input.submit:hover {
-    background-color: grey;
     color: white;
     transition-duration: 0.4s;
+}
+.instructions {
+    margin: 50px 0px;
 }
