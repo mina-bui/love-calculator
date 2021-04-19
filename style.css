@@ -1,0 +1,13 @@
+/* Styling for the Love Calculator */
+
+/* Box Sizing Reset */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+/* End Box Sizing Reset */
